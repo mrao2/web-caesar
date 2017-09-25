@@ -44,7 +44,6 @@ form=
 def index():
     return form.format("")
 
-#function to handle processing form info
 @app.route("/encrypt", methods=['POST'])
 def encrypt(text, rot):
     coded_text = ""
